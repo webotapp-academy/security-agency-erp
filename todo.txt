@@ -1,0 +1,476 @@
+# Project: WeBotApp Security Agency Manager
+
+Build a complete, lightweight Security Agency Management Software using Laravel, MySQL, Livewire and Tailwind CSS.
+
+The application is designed for Indian private security agencies managing security guards, corporate clients, residential societies, offices, factories, shops, warehouses and other security deployment locations.
+
+## 1. UI/UX DESIGN
+
+Create a modern, compact and professional interface.
+
+Design requirements:
+- Light background (white and light grey).
+- Small typography (12–14px).
+- Compact tables and forms.
+- Minimal padding and spacing.
+- Simple left sidebar navigation.
+- Clean dashboard with small information cards.
+- Responsive desktop, tablet and mobile layout.
+- Avoid gradients, oversized cards and dark themes.
+- Easy navigation for non-technical agency owners.
+
+## 2. DASHBOARD
+
+Display:
+- Total registered guards.
+- Active guards.
+- Guards currently deployed.
+- Available guards.
+- Total clients.
+- Total active sites.
+- Today's present guards.
+- Today's absent guards.
+- Guards on leave.
+- Pending salary payments.
+- Outstanding client invoices.
+- Upcoming contract renewals.
+- Recent activities.
+
+## 3. SECURITY GUARD MANAGEMENT
+
+Create complete guard profiles.
+
+Fields:
+- Guard ID (automatic).
+- Full name.
+- Photograph.
+- Father's name.
+- Date of birth.
+- Gender.
+- Mobile number.
+- Alternate mobile number.
+- Email.
+- Permanent address.
+- Current address.
+- Emergency contact.
+- Aadhaar reference (optional, securely handled).
+- PAN (optional).
+- Police verification status and reference.
+- Background verification status.
+- Joining date.
+- Employment type.
+- Designation.
+- Qualification.
+- Training details.
+- Previous experience.
+- Blood group (optional).
+- Bank account details (restricted access).
+- Guard status.
+
+Employment statuses:
+- Active.
+- Inactive.
+- Suspended.
+- Resigned.
+- Terminated.
+
+Document uploads:
+- Photograph.
+- Identity documents.
+- Police verification documents.
+- Training certificates.
+- Appointment letter.
+- Other documents.
+
+## 4. CLIENT MANAGEMENT
+
+Manage companies and customers hiring security personnel.
+
+Fields:
+- Client name.
+- Company name.
+- Contact person.
+- Mobile number.
+- Email.
+- Billing address.
+- GSTIN.
+- State.
+- PIN code.
+- Contract start date.
+- Contract end date.
+- Contract amount.
+- Payment terms.
+- Contract document.
+- Notes.
+
+Features:
+- Client profile.
+- Active and inactive clients.
+- Client-wise sites.
+- Assigned guards.
+- Billing history.
+- Outstanding balance.
+- Contract renewal alerts.
+
+## 5. SITE MANAGEMENT
+
+A client can have multiple security deployment sites.
+
+Fields:
+- Site name.
+- Client.
+- Site address.
+- Site contact person.
+- Contact number.
+- Required guard count.
+- Site supervisor.
+- Duty instructions.
+- Shift requirements.
+- Site status.
+
+Examples:
+- Residential apartment.
+- Factory.
+- Warehouse.
+- Office.
+- Shopping mall.
+- School.
+- Hospital.
+- Construction site.
+
+## 6. GUARD DEPLOYMENT
+
+- Assign guards to client sites.
+- Select deployment date.
+- Assign designation.
+- Assign shift.
+- Record deployment instructions.
+- Track deployment history.
+- Transfer guards between sites.
+- Remove guards from deployment.
+- Prevent overlapping active assignments.
+- Track required versus deployed guard count.
+
+## 7. DUTY ROSTER AND SHIFT MANAGEMENT
+
+Create configurable shifts.
+
+Default shifts:
+- Morning: 06:00–14:00.
+- Evening: 14:00–22:00.
+- Night: 22:00–06:00.
+- General: 09:00–18:00.
+
+Features:
+- Create custom shifts.
+- Daily duty roster.
+- Weekly duty roster.
+- Monthly duty roster.
+- Assign guards to shifts.
+- Shift rotation.
+- Replacement guards.
+- Roster printing.
+- Site-wise duty schedules.
+
+## 8. ATTENDANCE MANAGEMENT
+
+Record guard attendance.
+
+Attendance options:
+- Present.
+- Absent.
+- Half-day.
+- Weekly off.
+- Leave.
+- Holiday.
+- Overtime.
+
+Features:
+- Date-wise attendance.
+- Site-wise attendance.
+- Shift-wise attendance.
+- Guard-wise attendance history.
+- Manual attendance entry.
+- Check-in and check-out time.
+- Late arrival tracking.
+- Overtime calculation.
+- Attendance correction with audit trail.
+- Monthly attendance summary.
+
+Keep an architecture that can support mobile attendance and GPS verification in a future version.
+
+## 9. LEAVE MANAGEMENT
+
+- Apply for leave.
+- Select leave type.
+- Start and end date.
+- Reason.
+- Supporting document.
+- Approve or reject leave.
+- Leave history.
+- Leave balance.
+- Leave calendar.
+
+## 10. PAYROLL AND SALARY MANAGEMENT
+
+Manage guard salaries.
+
+Fields:
+- Guard.
+- Salary type.
+- Monthly basic salary.
+- Allowances.
+- Overtime rate.
+- Working days.
+- Present days.
+- Leave deductions.
+- Advance deductions.
+- Other deductions.
+- Net payable salary.
+
+Features:
+- Monthly payroll generation.
+- Attendance-based salary calculation.
+- Overtime calculation.
+- Salary advances.
+- Advance recovery.
+- Salary payment records.
+- Payment mode.
+- Salary slip PDF.
+- Payroll history.
+- Pending salary report.
+
+Support configurable salary calculation methods. Do not hardcode statutory wage, PF, ESI, bonus or overtime rules. Provide configurable payroll components and make statutory compliance subject to applicable Indian labour laws.
+
+## 11. CLIENT BILLING
+
+Generate monthly invoices for clients.
+
+Fields:
+- Client.
+- Site.
+- Billing period.
+- Number of guards.
+- Per-guard monthly rate.
+- Additional charges.
+- Discounts.
+- GST.
+- Total amount.
+- Payment received.
+- Outstanding balance.
+
+Features:
+- Monthly billing.
+- Site-wise billing.
+- Client-wise consolidated billing.
+- Invoice PDF.
+- Payment receipts.
+- Partial payments.
+- Outstanding reports.
+- Invoice status.
+
+## 12. EQUIPMENT AND UNIFORM MANAGEMENT
+
+Manage equipment issued to guards.
+
+Items:
+- Uniform.
+- Shoes.
+- ID card.
+- Torch.
+- Baton.
+- Raincoat.
+- Safety equipment.
+- Other equipment.
+
+Features:
+- Equipment stock.
+- Issue equipment to guards.
+- Issue date.
+- Return date.
+- Condition.
+- Lost or damaged equipment.
+- Equipment history.
+
+## 13. INCIDENT AND COMPLAINT MANAGEMENT
+
+Record security incidents.
+
+Fields:
+- Incident ID.
+- Client.
+- Site.
+- Incident date and time.
+- Reported by.
+- Involved guards.
+- Incident category.
+- Description.
+- Action taken.
+- Supporting photographs/documents.
+- Resolution status.
+
+Categories:
+- Theft.
+- Unauthorized entry.
+- Fire.
+- Property damage.
+- Safety incident.
+- Visitor dispute.
+- Other.
+
+Maintain confidential access to incident records.
+
+## 14. EXPENSE MANAGEMENT
+
+Track:
+- Uniform expenses.
+- Equipment expenses.
+- Transportation.
+- Recruitment.
+- Office rent.
+- Electricity.
+- Staff salaries.
+- Other expenses.
+
+Include expense categories, receipts, date filters and reports.
+
+## 15. REPORTS
+
+Generate:
+- Guard list.
+- Active and inactive guards.
+- Client list.
+- Site-wise guard deployment.
+- Daily attendance.
+- Monthly attendance.
+- Absent guard report.
+- Overtime report.
+- Leave report.
+- Monthly payroll.
+- Salary outstanding.
+- Client invoices.
+- Client outstanding.
+- Revenue report.
+- Expense report.
+- Contract expiry report.
+- Equipment issue report.
+- Incident report.
+
+Support PDF and Excel export.
+
+## 16. SETTINGS
+
+### My Profile
+- Change name.
+- Change email.
+- Change mobile number.
+- Upload profile photo.
+
+### Security
+- Change password.
+- Verify current password.
+- Confirm new password.
+- Logout.
+
+### Business Settings
+- Agency name.
+- Agency logo.
+- Office address.
+- Contact number.
+- Email.
+- GSTIN.
+- Invoice prefix.
+- Invoice footer.
+- Currency: INR.
+- Default shift settings.
+- Payroll configuration.
+- Document settings.
+
+## 17. USER MANAGEMENT
+
+- Single business.
+- Single branch.
+- Admin account.
+- Optional staff accounts.
+- Role-based permissions.
+
+Suggested roles:
+- Administrator.
+- HR Manager.
+- Site Supervisor.
+- Accountant.
+- Operations Manager.
+
+Control permissions for:
+- Guard records.
+- Client records.
+- Attendance.
+- Payroll.
+- Billing.
+- Incidents.
+- Reports.
+- Settings.
+
+Site supervisors should only access their assigned sites and relevant guards.
+
+## 18. SIDEBAR NAVIGATION
+
+1. Dashboard
+2. Guards
+3. Clients
+4. Sites
+5. Deployments
+6. Duty Roster
+7. Attendance
+8. Leave Management
+9. Payroll
+10. Client Billing
+11. Equipment
+12. Incidents
+13. Expenses
+14. Reports
+15. Users
+16. Settings
+
+## 19. TECHNICAL REQUIREMENTS
+
+- Laravel latest stable version compatible with dependencies.
+- PHP 8.2 or higher.
+- MySQL.
+- Livewire.
+- Tailwind CSS.
+- Secure authentication.
+- Database migrations and seeders.
+- Secure document uploads.
+- Form validation.
+- Database transactions for financial operations.
+- Decimal database fields for money.
+- Role-based authorization.
+- Audit logs.
+- Pagination and advanced filters.
+- Reusable components.
+- Proper database relationships.
+- Demo data.
+
+## 20. IMPORTANT DEVELOPMENT RULES
+
+- Build a fully functional application, not just a UI prototype.
+- Every button, form, search, filter and action must work.
+- Avoid unnecessary complexity.
+- Prevent overlapping guard deployments.
+- Maintain accurate attendance and payroll calculations.
+- Maintain complete payment history.
+- Do not permanently delete financial transactions.
+- Restrict access to sensitive identity and bank information.
+- Log changes to attendance, payroll and deployments.
+- Provide confirmation before critical operations.
+- Include README and installation instructions.
+- Include Docker configuration where practical.
+- Provide demo admin credentials through seeders.
+- Ensure compatibility with standard Laravel VPS hosting.
+
+## FINAL OBJECTIVE
+
+Deliver a complete, compact and production-oriented Security Agency Management Software for Indian private security agencies.
+
+The application should help agency owners manage guards, clients, deployment sites, duty rosters, attendance, payroll, billing and incidents from one simple dashboard.

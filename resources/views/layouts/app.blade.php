@@ -34,7 +34,7 @@
                     </svg>
                 </div>
                 <div class="truncate">
-                    <span class="font-bold text-xs text-slate-900 block leading-tight truncate">{{ \App\Models\Setting::get('software_logo_name', 'Garuda Apex Security') }}</span>
+                    <span class="font-bold text-xs text-slate-900 block leading-tight truncate">{{ \App\Models\Setting::get('software_logo_name', 'WeBotApp') }}</span>
                     <span class="text-[10px] text-slate-500 font-medium tracking-tight">Agency Manager</span>
                 </div>
             </a>

@@ -55,7 +55,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                         <label class="block font-medium text-slate-700 mb-0.5">Software Logo Name *</label>
-                        <input type="text" wire:model="software_logo_name" required placeholder="e.g. Garuda Apex Security" class="w-full px-2.5 py-1.5 bg-white border border-slate-300 rounded">
+                        <input type="text" wire:model="software_logo_name" required placeholder="e.g. WeBotApp" class="w-full px-2.5 py-1.5 bg-white border border-slate-300 rounded">
                     </div>
                     <div>
                         <label class="block font-medium text-slate-700 mb-0.5">Agency Name *</label>

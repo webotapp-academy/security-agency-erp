@@ -81,14 +81,15 @@ class DatabaseSeeder extends Seeder
 
         // 2. Business Settings
         $settingsData = [
-            'agency_name' => 'Garuda Apex Security Services Pvt. Ltd.',
+            'software_logo_name' => 'WeBotApp',
+            'agency_name' => 'WeBotApp Security Services Pvt. Ltd.',
             'agency_tagline' => 'Vigilant, Disciplined & Reliable Security Solutions',
             'agency_phone' => '+91 98640 12345',
-            'agency_email' => 'contact@garudasecurity.in',
+            'agency_email' => 'contact@webotapp.com',
             'agency_address' => 'Plot 42, G.S. Road, Christian Basti, Guwahati, Assam - 781005',
             'agency_gstin' => '18AABCG1234F1Z8',
             'invoice_prefix' => 'GSS-INV',
-            'invoice_footer' => 'Thank you for choosing Garuda Apex Security Services. For billing inquiries, email accounts@garudasecurity.in.',
+            'invoice_footer' => 'Thank you for choosing WeBotApp Security Services. For billing inquiries, email accounts@webotapp.com.',
             'currency_symbol' => '₹',
             'currency_code' => 'INR',
             'default_shift_hours' => '8',

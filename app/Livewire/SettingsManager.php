@@ -42,8 +42,8 @@ class SettingsManager extends Component
         $this->email = $user->email;
         $this->phone = $user->phone;
 
-        $this->software_logo_name = Setting::get('software_logo_name', 'Garuda Apex Security');
-        $this->agency_name = Setting::get('agency_name', 'Garuda Apex Security Services Pvt. Ltd.');
+        $this->software_logo_name = Setting::get('software_logo_name', 'WeBotApp');
+        $this->agency_name = Setting::get('agency_name', 'WeBotApp Security Services Pvt. Ltd.');
         $this->agency_tagline = Setting::get('agency_tagline', '');
         $this->agency_phone = Setting::get('agency_phone', '');
         $this->agency_email = Setting::get('agency_email', '');

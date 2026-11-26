@@ -294,7 +294,7 @@
                     <!-- Invoice Header -->
                     <div class="flex justify-between items-start border-b border-slate-300 pb-4">
                         <div>
-                            <h2 class="text-base font-bold text-slate-900 uppercase tracking-tight">Garuda Apex Security Services Pvt. Ltd.</h2>
+                            <h2 class="text-base font-bold text-slate-900 uppercase tracking-tight">{{ \App\Models\Setting::get('agency_name', 'Garuda Apex Security Services Pvt. Ltd.') }}</h2>
                             <p class="text-[11px] text-slate-600">Plot 42, G.S. Road, Christian Basti, Guwahati, Assam - 781005</p>
                             <p class="text-[11px] text-slate-600">GSTIN: <span class="font-mono font-bold">18AABCG1234F1Z8</span> &bull; State: Assam (18)</p>
                             <p class="text-[11px] text-slate-500">Email: accounts@garudasecurity.in &bull; Ph: +91 98640 12345</p>
@@ -398,7 +398,7 @@
                     <!-- Payment Details & Terms -->
                     <div class="p-3 bg-slate-50 rounded border border-slate-200 text-[11px] text-slate-600 space-y-1">
                         <div class="font-bold text-slate-800">Bank Payment Details:</div>
-                        <div>Account Name: <span class="font-semibold text-slate-900">Garuda Apex Security Services Pvt. Ltd.</span></div>
+                        <div>Account Name: <span class="font-semibold text-slate-900">{{ \App\Models\Setting::get('agency_name', 'Garuda Apex Security Services Pvt. Ltd.') }}</span></div>
                         <div>Bank: <span class="font-semibold text-slate-900">State Bank of India &bull; A/C: 309988776655 &bull; IFSC: SBIN0001234</span></div>
                     </div>
 
@@ -410,7 +410,7 @@
                             <p>2. Subject to Guwahati jurisdiction.</p>
                         </div>
                         <div>
-                            <p class="text-[11px] text-slate-600 font-medium">For Garuda Apex Security Services Pvt. Ltd.</p>
+                            <p class="text-[11px] text-slate-600 font-medium">For {{ \App\Models\Setting::get('agency_name', 'Garuda Apex Security Services Pvt. Ltd.') }}</p>
                             <div class="w-40 border-t border-slate-400 mx-auto mt-8"></div>
                             <span class="text-[11px] text-slate-500 mt-0.5 block">Authorized Signatory</span>
                         </div>

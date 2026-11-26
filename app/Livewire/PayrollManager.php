@@ -53,6 +53,11 @@ class PayrollManager extends Component
         $this->showGenerateModal = true;
     }
 
+    public function generateMonthlyPayroll()
+    {
+        $this->generatePayroll();
+    }
+
     public function generatePayroll()
     {
         $guards = Guard::where('status', 'active')->get();

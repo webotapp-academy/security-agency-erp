@@ -261,7 +261,7 @@
                 <div class="p-6 text-xs text-slate-800 space-y-4 print-break-inside-avoid">
                     <!-- Agency Header -->
                     <div class="text-center border-b pb-3">
-                        <h2 class="text-sm font-bold text-slate-900 uppercase tracking-tight">Garuda Apex Security Services Pvt. Ltd.</h2>
+                        <h2 class="text-sm font-bold text-slate-900 uppercase tracking-tight">{{ \App\Models\Setting::get('agency_name', 'Garuda Apex Security Services Pvt. Ltd.') }}</h2>
                         <p class="text-[11px] text-slate-600">Plot 42, G.S. Road, Christian Basti, Guwahati, Assam - 781005 &bull; Reg: 18AABCG1234F1Z8</p>
                         <p class="text-[11px] font-bold text-slate-800 mt-1 uppercase underline tracking-wider">Salary Pay Slip for {{ $selectedPayroll->period }}</p>
                     </div>
